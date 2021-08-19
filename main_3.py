@@ -128,8 +128,6 @@ def ga_fun(p):
 def ga_fun_temp(p):
     a, b, c, d, e, f, g, h, i, j, k, m = p
     residuals = np.float64(abs(my_function_ga(x_curve_fitting_real, a, b, c, d, e, f, g, h, i, j, k, m) - y_temperature_real)).sum()
-    
-    residuals = residuals.sum()
     return residuals
 
 generations = 100
