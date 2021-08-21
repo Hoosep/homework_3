@@ -132,7 +132,7 @@ def ga_fun_temp(p):
 
 generations = 100
 ga = GA(func=ga_fun, n_dim=12, size_pop=600, max_iter=generations, prob_mut=0.1,
-        lb=1, ub=20)
+        lb=0, ub=20)
 
 ga_temperature = GA(func=ga_fun_temp, n_dim=12, size_pop=600, max_iter=generations, prob_mut=0.1,
         lb=-4, ub=23)
